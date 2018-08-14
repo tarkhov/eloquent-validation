@@ -1,5 +1,5 @@
 <?php
-namespace LaravelSuite\Foundation\Http;
+namespace LaravelLabs\Foundation\Http;
 
 use Illuminate\Foundation\Http\FormRequest as BaseFormRequest;
 
