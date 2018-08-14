@@ -5,7 +5,7 @@ use Illuminate\Foundation\Http\FormRequest as BaseFormRequest;
 
 abstract class FormRequest extends BaseFormRequest
 {
-    public function onlyValid()
+    public function onlyRules()
     {
         return $this->only(array_keys($this->rules()));
     }
