@@ -1,9 +1,9 @@
 <?php
-namespace LaravelLabs\Foundation\Http;
+namespace LaravelSuite\Foundation\Http;
 
-use Illuminate\Foundation\Http\FormRequest as BaseFormRequest;
+use Illuminate\Foundation\Http\FormRequest as HttpFormRequest;
 
-abstract class FormRequest extends BaseFormRequest
+abstract class FormRequest extends HttpFormRequest
 {
     public function onlyRules()
     {
