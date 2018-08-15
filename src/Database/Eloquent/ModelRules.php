@@ -1,5 +1,5 @@
 <?php
-namespace LaravelSuite\Database\Eloquent;
+namespace EloquentValidation\Database\Eloquent;
 
 interface ModelRules
 {
