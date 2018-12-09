@@ -11,7 +11,7 @@ abstract class CreateFormRequest extends ModelFormRequest
     public function rules()
     {
         $rules = $this->model::rules();
-        unset($rules['id']);
+        unset($rules[$this->primaryKey]);
         return $rules;
     }
 }

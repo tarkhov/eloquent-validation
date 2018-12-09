@@ -12,7 +12,7 @@ abstract class DeleteFormRequest extends ModelFormRequest
     {
         $rules = $this->model::rules();
         return [
-            'id' => $rules['id']
+            $this->primaryKey => $rules[$this->primaryKey]
         ];
     }
 }
