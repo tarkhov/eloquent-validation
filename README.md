@@ -17,7 +17,7 @@ Laravel eloquent model validation rules.
 
 Library | Version
 ------- | -------
-Laravel | 5.5
+Laravel | >=5.5
 
 ## Installation
 

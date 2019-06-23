@@ -25,6 +25,6 @@
     },
     "require": {
         "php": ">=7.0",
-        "illuminate/database": "^5.5"
+        "laravel/framework": ">=5.5"
     }
 }
