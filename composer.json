@@ -1,7 +1,7 @@
 {
     "name": "tarkhov/eloquent-validation",
     "description": "Laravel Eloquent model validation.",
-    "keywords": ["laravel", "model", "validation", "database", "sql", "orm", "eloquent"],
+    "keywords": ["laravel", "model", "validation", "database", "sql", "orm", "eloquent", "form", "request"],
     "type": "library",
     "homepage": "https://github.com/tarkhov/eloquent-validation",
     "license": "MIT",
