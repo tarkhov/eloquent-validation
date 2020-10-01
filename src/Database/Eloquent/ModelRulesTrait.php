@@ -10,6 +10,6 @@ trait ModelRulesTrait
 
     public static function exceptRules($fields)
     {
-        return array_intersect_key(static::rules(), array_flip($fields));
+        return array_diff_key(static::rules(), array_flip($fields));
     }
 }
