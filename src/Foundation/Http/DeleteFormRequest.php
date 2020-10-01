@@ -10,9 +10,13 @@ abstract class DeleteFormRequest extends ModelFormRequest
      */
     public function rules()
     {
-        $rules = $this->model::rules();
-        return [
-            $this->primaryKey => $rules[$this->primaryKey]
-        ];
+        $rules = parent::rules();
+        if (empty($this->fields)) {
+            return [
+                $this->primaryKey => $rules[$this->primaryKey]
+            ];
+        } else {
+            return $rules;
+        }
     }
 }
