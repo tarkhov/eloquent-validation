@@ -4,6 +4,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use EloquentValidation\Database\Eloquent\ModelRules;
 
+
 class Page extends Model implements ModelRules
 {
     protected $fillable = [
