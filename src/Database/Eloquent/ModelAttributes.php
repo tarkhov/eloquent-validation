@@ -3,5 +3,10 @@ namespace EloquentValidation\Database\Eloquent;
 
 interface ModelAttributes
 {
-    public static function attributes();
+    /**
+     * Get custom attributes for validator errors.
+     *
+     * @return array
+     */
+    public static function attributes(): array;
 }

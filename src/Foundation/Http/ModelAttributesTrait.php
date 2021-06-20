@@ -5,7 +5,12 @@ use Illuminate\Support\Arr;
 
 trait ModelAttributesTrait
 {
-    public function attributes()
+    /**
+     * Get custom attributes for validator errors.
+     *
+     * @return array
+     */
+    public function attributes(): array
     {
         if (!empty($this->fields)) {
             if (empty($this->fields['except'])) {

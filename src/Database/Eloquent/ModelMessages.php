@@ -3,5 +3,10 @@ namespace EloquentValidation\Database\Eloquent;
 
 interface ModelMessages
 {
-    public static function messages();
+    /**
+     * Get custom messages for validator errors.
+     *
+     * @return array
+     */
+    public static function messages(): array;
 }

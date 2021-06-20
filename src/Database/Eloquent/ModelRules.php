@@ -3,5 +3,10 @@ namespace EloquentValidation\Database\Eloquent;
 
 interface ModelRules
 {
-    public static function rules();
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array
+     */
+    public static function rules(): array;
 }

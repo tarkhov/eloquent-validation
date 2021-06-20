@@ -5,7 +5,12 @@ use Illuminate\Support\Arr;
 
 trait ModelRulesTrait
 {
-    public function rules()
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array
+     */
+    public function rules(): array
     {
         if (!empty($this->fields)) {
             if (empty($this->fields['except'])) {

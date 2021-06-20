@@ -1,22 +1,19 @@
 <?php
 namespace EloquentValidation\Foundation\Http;
 
-abstract class DeleteFormRequest extends ModelFormRequest
+class SaveFormRequest extends ModelFormRequest
 {
     /**
      * Get the validation rules that apply to the request.
      *
      * @return array
      */
-    public function rules()
+    public function rules(): array
     {
         $rules = parent::rules();
         if (empty($this->fields) && $this->primaryKey && isset($rules[$this->primaryKey])) {
-            return [
-                $this->primaryKey => $rules[$this->primaryKey]
-            ];
-        } else {
-            return $rules;
+            unset($rules[$this->primaryKey]);
         }
+        return $rules;
     }
 }
